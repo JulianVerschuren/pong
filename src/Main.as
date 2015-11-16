@@ -9,8 +9,7 @@ package
 	
 	/**
 	 * ...
-	 * @author erwin henraat
-	 */
+	 * @author julian	 */
 	public class Main extends Sprite 
 	{
 		private var gameScreen:GameScreen
