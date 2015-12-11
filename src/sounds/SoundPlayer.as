@@ -29,6 +29,7 @@ package sounds
 			_main.addEventListener(GameScreen.BALL_BOUNCE, onBounce, true);
 			_main.addEventListener(GameScreen.GAME_OVER, onGameOver, true);
 			_main.addEventListener(IntroScreen.START_GAME, onIntro, true);
+			_main.addEventListener(GameScreen.WIN, onWin, true);
 			
 		}
 		
@@ -40,7 +41,13 @@ package sounds
 		private function onGameOver(e:Event):void 
 		{
 			playSound(3);
+		}	
+		
+		private function onWin(e:Event):void 
+		{
+			playSound(3);
 		}		
+		
 		private function onBounce(e:Event):void 
 		{
 			playSound(Math.floor(Math.random() * 3));

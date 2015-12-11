@@ -1,6 +1,7 @@
 package actors 
 {
 	import flash.display.MovieClip;
+	import flash.events.DRMReturnVoucherCompleteEvent;
 	import flash.events.Event;
 	import flash.geom.Point;
 	import flash.display.Stage;
@@ -39,7 +40,7 @@ package actors
 		private function init(e:Event):void 
 		{
 			removeEventListener(Event.ADDED_TO_STAGE, init);
-			addChild(new BallArt());
+			addChild(new hetevleugel());
 			movement = new Point(0, 0);
 			this.addEventListener(Event.ENTER_FRAME, loop);
 		}
@@ -66,7 +67,7 @@ package actors
 			
 			if (this.y <= 0 || this.y >= stage.stageHeight)
 			{
-				_movement.y *= -1;
+				_movement.y *= -150;
 				
 			}
 			if (this.x > stage.stageWidth)

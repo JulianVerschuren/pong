@@ -5,11 +5,36 @@ package actors
 	/**
 	 * ...
 	 * @author erwin henraat
+	 * Voeg zelf een getter en setter voor de variabele maxSpeed toe aan de Player class. 
+	 * Roep deze aan vanuit de GameScreen class en pas zo de waarde aan. De setter moet een if statement hebben die de max speed beperkt tot 30. 
+	 * Als de max speed hoger is moet er een trace worden weergegeven "maxspeed cannot be more than 30! "
+
+	Bij de beoordeling van het Pong project telt deze opdracht mee. 
 	 */
 	public class Player extends Paddle 
 	{
 		private var controller:Controller;
 		private var speed:Number = 0;
+		private var _maxSpeed:Number = 20;
+		
+		public function set maxSpeed(o:Number):void
+		{
+			_maxSpeed = o;
+			if (_maxSpeed > 30)
+			{
+				_maxSpeed = 30;
+				trace("max speed cannot be more than 20!")
+			}
+		}
+		
+		public function get maxSpeed():Number
+		{
+			return _maxSpeed;
+		}
+		
+		
+		
+		
 		
 		public function Player() 
 		{
@@ -25,11 +50,11 @@ package actors
 		{
 			if (controller.up)
 			{
-				speed = -15;
+				speed = -maxSpeed;
 			}
 			else if(controller.down)
 			{
-				speed = 15;
+				speed = maxSpeed;
 			}else
 			{
 				if (speed > 0) speed--;

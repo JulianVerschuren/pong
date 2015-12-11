@@ -15,7 +15,7 @@ package screens
 		private var title:TextField;
 		private var start:TextField;
 		
-		public static const START_GAME:String = "start game";		
+		public static const START_GAME:String = "It's finger licking good";		
 				
 		
 		
@@ -34,7 +34,7 @@ package screens
 						
 			title = new TextField();
 			title.embedFonts = true;
-			title.text = "Pong";
+			title.text = "HotwingTennis";
 			title.autoSize = TextFieldAutoSize.CENTER;			
 			title.setTextFormat(textFormat);		
 			
@@ -49,7 +49,7 @@ package screens
 			
 			start = new TextField();
 			start.embedFonts = true;
-			start.text = "press space to start";
+			start.text = "press space to start enjoying the finger licking quality of KFC";
 			start.autoSize = TextFieldAutoSize.CENTER;
 			start.setTextFormat(subFormat)
 			
