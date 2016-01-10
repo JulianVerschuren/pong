@@ -15,14 +15,14 @@ package actors
 	{
 		private var controller:Controller;
 		private var speed:Number = 0;
-		private var _maxSpeed:Number = 20;
+		private var _maxSpeed:Number = 1;
 		
 		public function set maxSpeed(o:Number):void
 		{
 			_maxSpeed = o;
 			if (_maxSpeed > 30)
 			{
-				_maxSpeed = 30;
+				_maxSpeed = 17;
 				trace("max speed cannot be more than 20!")
 			}
 		}
