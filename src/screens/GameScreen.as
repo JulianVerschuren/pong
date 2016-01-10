@@ -75,7 +75,7 @@ package screens
 					if (paddles[j].hitTestObject(balls[i]))
 					{
 						balls[i].xMove *= -1;
-						balls[i].x += balls[i].xMove / 2;
+						balls[i].x += balls[i].xMove / 1;
 						
 						dispatchEvent(new Event(BALL_BOUNCE));
 					}

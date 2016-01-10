@@ -22,7 +22,7 @@ package actors
 			_maxSpeed = o;
 			if (_maxSpeed > 30)
 			{
-				_maxSpeed = 17;
+				_maxSpeed = 19;
 				trace("max speed cannot be more than 20!")
 			}
 		}
